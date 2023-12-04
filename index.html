@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix-Homepage</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+</head>
+
+<body class="bg-dark">
+    <header>
+        <nav class="navbar navbar-dark navbar-expand-lg">
+            <div class="cs-container_fluid d-flex bg-dark">
+                <a class="navbar-brand" href="#">
+                    <img style="margin-left:-10px" src="assets/img/netflix_logo.png" width="auto" height="50"
+                        alt="Netlfix logo">
+                </a> 
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon "></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-light fw-semibold" aria-current="page" href="#">TV Shows</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">Movies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">Recently Added</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">My List</a>
+                        </li>
+                    </ul>
+                    <!-- menu di destra -->
+                    <ul class="navbar-nav me-0 mb-2 mb-lg-0 d-flex align-items-center">
+                        <li class="nav-item fs-5">
+                            <a class="nav-link text-light" href="#">
+                                <i class="bi bi-search"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">
+                                <img src="assets/img/kids_icon.png" alt="Kids Section" width="auto" height="50px">
+                            </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link text-light fs-5 " href="#">
+                                <i class="bi bi-bell-fill"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light pe-0" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="assets/img/AvatarJ.jpg" alt="Avatar" width="auto" height="50px">
+                            </a>
+                            <ul class="dropdown-menu" data-bs-theme="dark">
+                                <li><a class="dropdown-item" href="user-profile.html" target="_blank">Profile preferences</a></li>
+                                <li><a class="dropdown-item" href="#">General Setting</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Log Out</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <main>
+        <!-- Intestazione TV Shows -->
+        <div class="cs-container_fluid d-flex  justify-content-between align-items-center mb-3">
+            <div class="d-flex align-items-center">
+                <h1 class="text-light">TV Shows</h1>
+                <div class="dropdown ms-5">
+                    <a class="btn btn-outline-light rounded-0 dropdown-toggle" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Genres
+                    </a>
+                    <ul class="dropdown-menu rounded-0" data-bs-theme="dark">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Adventure</a></li>
+                        <li><a class="dropdown-item" href="#">Comedy</a></li>
+                        <li><a class="dropdown-item" href="#">Thriller</a></li>
+                        <li><a class="dropdown-item" href="#">Documentary</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                <label class="btn btn-outline-secondary rounded-0" for="btnradio1"><i class="bi bi-list"></i></label>
+              
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                <label class="btn btn-outline-secondary rounded-0" for="btnradio2"><i class="bi bi-grid-fill"></i></label>
+            </div>
+
+           
+        </div>
+        <section class="cs-container_fluid mb-5">
+            <h2 class="text-white text-center text-md-start h4">Trending Now</h2>
+            <div class="my-3">
+                <div class="row my-auto justify-content-center">
+                    <div id="recipeCarousel1" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <div class="col-md-2">
+                                    <div class="mx-1 shadow">
+                                        <img src="assets/img/media0.webp" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-2">
+                                    <div class="mx-1 shadow">
+                                        <img src="assets/img/media1.jpg" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-2">
+                                    <div class="mx-1 shadow">
+                                        <img src="assets/img/media2.webp" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-2">
+                                    <div class="mx-1 shadow">
+                                        <img src="assets/img/media3.webp" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-2">
+                                    <div class="mx-1 shadow">
+                                        <img src="assets/img/media4.jpg" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-2">
+                                    <div class="mx-1 shadow">
+                                        <img src="assets/img/media5.webp" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-2">
+                                    <div class="mx-1 shadow">
+                                        <img src="assets/img/media6.jpg" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-2">
+                                    <div class="mx-1 shadow">
+                                        <img src="assets/img/media7.webp" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-2">
+                                    <div class="mx-1 shadow">
+                                        <img src="assets/img/media8.webp" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-2">
+                                    <div class="mx-1 shadow">
+                                        <img src="assets/img/media9.jpg" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev bg-transparent w-auto" href="#recipeCarousel1" role="button"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </a>
+                        <a class="carousel-control-next bg-transparent w-auto" href="#recipeCarousel1" role="button"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cs-container_fluid mt-3 mb-5">
+            <h2 class="text-white text-center text-md-start h4">Watch It Again</h2>
+            <div class="my-3">
+                <div class="row my-auto justify-content-center">
+                    <div id="recipeCarousel2" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <div class="col-md-2">
+                                    <div class="mx-1 shadow">
+                                        <img src="assets/img/media10.jpg" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-2">
+                                    <div class="mx-1 shadow">
+                                        <img src="assets/img/media11.jpg" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-2">
+                                    <div class="mx-1 shadow">
+                                        <img src="assets/img/media12.jpg" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-2">
+                                    <div class="mx-1 shadow">
+                                        <img src="assets/img/media13.jpg" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-2">
+                                    <div class="mx-1 shadow">
+                                        <img src="assets/img/media14.webp" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-2">
+                                    <div class="mx-1 shadow">
+                                        <img src="assets/img/media15.jpg" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-2">
+                                    <div class="mx-1 shadow">
+                                        <img src="assets/img/media16.webp" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-2">
+                                    <div class="mx-1 shadow">
+                                        <img src="assets/img/media17.jpg" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-2">
+                                    <div class="mx-1 shadow">
+                                        <img src="assets/img/media18.jpg" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-2">
+                                    <div class="mx-1 shadow">
+                                        <img src="assets/img/media19.webp" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev bg-transparent w-auto" href="#recipeCarousel2" role="button"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </a>
+                        <a class="carousel-control-next bg-transparent w-auto" href="#recipeCarousel2" role="button"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cs-container_fluid mt-3 mb-5">
+            <h2 class="text-white text-center text-md-start h4">New Releases</h2>
+            <div class="my-3">
+                <div class="row my-auto justify-content-center">
+                    <div id="recipeCarousel3" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <div class="col-md-2">
+                                    <div class="mx-1 shadow">
+                                        <img src="assets/img/media20.jpg" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-2">
+                                    <div class="mx-1 shadow">
+                                        <img src="assets/img/media21.webp" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-2">
+                                    <div class="mx-1 shadow">
+                                        <img src="assets/img/media22.webp" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-2">
+                                    <div class="mx-1 shadow">
+                                        <img src="assets/img/media23.webp" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-2">
+                                    <div class="mx-1 shadow">
+                                        <img src="assets/img/media24.jpg" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-2">
+                                    <div class="mx-1 shadow">
+                                        <img src="assets/img/media25.webp" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-2">
+                                    <div class="mx-1 shadow">
+                                        <img src="assets/img/media26.webp" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-2">
+                                    <div class="mx-1 shadow">
+                                        <img src="assets/img/media27.jpg" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-2">
+                                    <div class="mx-1 shadow">
+                                        <img src="assets/img/media28.jpg" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-2">
+                                    <div class="mx-1 shadow">
+                                        <img src="assets/img/media29.jpg" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev bg-transparent w-auto" href="#recipeCarousel3" role="button"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </a>
+                        <a class="carousel-control-next bg-transparent w-auto" href="#recipeCarousel3" role="button"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="cs-container_narrow pt-5  text-center text-md-start">
+        <!-- link social (INCORPORARE LINK PAGINE) -->
+        <div class="text-secondary fs-2 my-2">
+            <a class="text-secondary text-decoration-none me-3" href="https://www.facebook.com/netflixitalia/?locale=it_IT"  target="_blank">
+                <i class="bi bi-facebook"></i>
+            </a>
+            <a class=" text-secondary text-decoration-none me-3" href="https://www.instagram.com/netflixit/?hl=it"  target="_blank">
+                <i class="bi bi-instagram"></i>
+            </a>
+
+            <a class=" text-secondary text-decoration-none me-3" href="https://twitter.com/NetflixIT?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"  target="_blank">
+                <i class="bi bi-twitter"></i>
+            </a>
+
+            <a class=" text-secondary text-decoration-none me-3" href="https://www.youtube.com/c/netflixitalia"  target="_blank">
+                <i class="bi bi-youtube"></i>
+            </a>
+        </div>
+        <!-- FARE LISTA LINK -->
+        <div class="row  row-cols-md-3 row-cols-1 text-center text-md-start text-secondary gy-1">
+            <div class="column">
+                Audio and Subtitles
+            </div>
+            <div class="column">
+                Audio Desription
+            </div>
+            <div class="column">
+                Help Center
+            </div>
+            <div class="column">
+                Media Center
+            </div>
+            <div class="column">
+                Investor Relations
+            </div>
+            <div class="column">
+                Jobs
+            </div>
+            <div class="column">
+                Privacy
+            </div>
+            <div class="column">
+                Legal Notices
+            </div>
+            <div class="column">
+                Cookie Preferences
+            </div>
+            <div class="column">
+                Contact Us
+            </div>
+        </div>
+        <a class="btn btn-outline-secondary rounded-0 my-3" href="#">Service Code
+        </a>
+        <p class="text-secondary"> &copy; 1997-2019 Netflix, inc. {i-0d00fcda2fdf9c0de}</p>
+    </footer>
+    <script src="assets/js/script.js"></script>
+    <script src="bootstrap-5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
