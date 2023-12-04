@@ -46,6 +46,24 @@
 .cs-container_narrow {
     @include make-container(50%)
 }
-.cs-container_superNarrow {
+.cs-container_User {
     @include make-container(60%);
+    @media  screen and (max-width: 1400px) {
+        @include make-container(50%)   
+    };
+    @media  screen and (max-width: 1200px) {
+        @include make-container(40%)   
+    };
+    @media  screen and (max-width: 992px) {
+        @include make-container(30%)   
+    };
+    @media  screen and (max-width: 768px) {
+        @include make-container(20%)   
+    }
 }
+
+.navbar .dropdown-menu {
+    position: absolute;
+    transform: translateX(-70px);
+}
+

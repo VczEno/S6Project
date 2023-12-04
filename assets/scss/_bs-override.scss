@@ -1,7 +1,14 @@
 @import "../../bootstrap-5.3.2/scss/functions";
 @import "../../bootstrap-5.3.2/scss/mixins";
 
+
 $dark: rgb(17, 17, 17);
+//$--bs-btn-active-bg: $dark;
+//$--bs-btn-active-color-bg: $light;
+//$--bs-btn-active-color: $light;
+//non riesco a modificare i colori dei bottoni nello stato attivo
+@import "../../bootstrap-5.3.2/scss/buttons";
+@import "../../bootstrap-5.3.2/scss/variables";
 
 
 @import "../../bootstrap-5.3.2/scss/bootstrap.scss";
